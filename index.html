@@ -3,233 +3,320 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>سنجو | انتخاب بهتر، خرید مطمئن‌تر</title>
-<meta name="description" content="سنجو راهنمای مستقل انتخاب و مقایسه خرید؛ راهنمای خرید، مقایسه کاربردی و بررسی گزینه‌های چند فروشگاه در یک جا.">
+<title>سنجو | قبل از خرید، بهتر بسنج</title>
+<meta name="description" content="سنجو؛ راهنمای مستقل انتخاب و مقایسه محصول، با مسیر خرید از چند فروشگاه.">
 <link rel="canonical" href="https://senjoo.ir/">
-<meta name="theme-color" content="#0b7a75">
+<meta name="theme-color" content="#0B776F">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-Variable-font-face.css">
 <style>
 :root{
-  --ink:#122033;--muted:#6e7a8e;--bg:#f7f8fa;--paper:#ffffff;--line:#e6e9ee;
-  --teal:#0b7f79;--teal-dark:#075a56;--mint:#eaf7f5;--navy:#102636;
-  --peach:#fff1ea;--lav:#f0f1ff;--shadow:0 14px 40px rgba(19,34,61,.065);--r:22px
+  --bg:#F3F1EB;
+  --surface:#FFFFFF;
+  --surface-2:#EAF4F1;
+  --surface-3:#F8EFE8;
+  --ink:#14202B;
+  --text:#344150;
+  --muted:#586574;
+  --line:#DDDCD7;
+  --brand:#0B776F;
+  --brand-dark:#075C56;
+  --accent:#C88757;
+  --navy:#132936;
+  --shadow:0 12px 34px rgba(20,32,43,.07);
+  --r:22px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Vazirmatn",Tahoma,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;line-height:1.75
+}
 a{text-decoration:none;color:inherit}
 button,input{font:inherit}
-.wrap{width:min(1180px,calc(100% - 34px));margin:auto}
-
-.topbar{background:#0c2231;color:#d5e2e7;font-size:12px}
-.topbar .wrap{min-height:32px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.topbar b{color:#fff}
-header{position:sticky;top:0;z-index:50;background:rgba(248,249,251,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(230,233,238,.9)}
-.nav{min-height:70px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:26px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:850;font-size:21px;white-space:nowrap}
-.mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(145deg,var(--teal),var(--teal-dark));color:white;display:grid;place-items:center;font-weight:900;box-shadow:0 8px 20px rgba(11,127,121,.18)}
-.menu{display:flex;justify-content:center;gap:22px;font-size:13px;font-weight:600}
-.menu a{color:#243246}.menu a:hover{color:var(--teal)}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+header{
+  position:sticky;top:0;z-index:50;background:rgba(243,241,235,.94);
+  backdrop-filter:blur(18px);border-bottom:1px solid rgba(221,220,215,.85)
+}
+.nav{min-height:70px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:28px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:850;font-size:21px}
+.logo-mark{width:36px;height:36px;border-radius:12px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:900}
+.menu{display:flex;justify-content:center;gap:24px;font-size:13px;font-weight:600;color:#293642}
+.menu a:hover{color:var(--brand)}
 .actions{display:flex;gap:8px}
-.btn,.btn-ghost{border-radius:13px;padding:10px 15px;font-weight:750;font-size:13px;border:0;cursor:pointer}
-.btn{background:var(--teal);color:#fff;box-shadow:0 8px 20px rgba(11,127,121,.16)}
-.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn,.btn-ghost{padding:10px 15px;border-radius:12px;font-size:13px;font-weight:750;border:0;cursor:pointer}
+.btn{background:var(--brand);color:#fff}
+.btn:hover{background:var(--brand-dark)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}
 
-.hero{padding:54px 0 42px;background:
-radial-gradient(circle at 95% 0,#dff6f3 0,transparent 30%),
-radial-gradient(circle at 4% 8%,#fff0e8 0,transparent 24%),
-linear-gradient(#fbfcfd,#f7f8fa)}
-.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:38px;align-items:center}
-.kicker{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:11px;font-weight:800;color:var(--teal)}
-.dot{width:7px;height:7px;border-radius:50%;background:#22b9a7;box-shadow:0 0 0 5px rgba(34,185,167,.12)}
-h1{font-size:clamp(40px,5.1vw,62px);line-height:1.18;letter-spacing:-1.6px;margin:16px 0 16px;font-weight:900}
-h1 em{font-style:normal;color:var(--teal)}
-.lead{font-size:16px;color:var(--muted);max-width:690px;margin:0 0 22px}
-.search{max-width:700px;background:#fff;border:1px solid var(--line);border-radius:17px;padding:7px;display:flex;gap:8px;align-items:center;box-shadow:var(--shadow)}
-.search input{border:0;outline:0;background:transparent;flex:1;min-width:0;padding:10px 12px;color:var(--ink);font-size:14px}
-.search button{border:0;background:var(--teal);color:white;border-radius:12px;padding:11px 17px;font-weight:800;cursor:pointer}
-.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}
-.chip{border:1px solid var(--line);background:#fff;color:#59667a;padding:6px 9px;border-radius:999px;font-size:11px;cursor:pointer}
-.chip:hover{border-color:#b8deda;color:var(--teal)}
+.hero{padding:56px 0 36px}
+.hero-box{
+  background:linear-gradient(135deg,#EDF6F3 0%,#F7F4EE 58%,#FAEFE8 100%);
+  border:1px solid #D9DDD7;border-radius:30px;padding:48px;
+  box-shadow:var(--shadow)
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}
+.kicker{font-size:11px;color:var(--brand);font-weight:850;letter-spacing:.2px}
+h1{
+  font-size:clamp(36px,4.2vw,50px);line-height:1.25;letter-spacing:-1px;
+  margin:10px 0 12px;font-weight:900
+}
+.hero-copy{font-size:15px;color:var(--text);margin:0 0 20px;max-width:720px}
+.search{
+  display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #D7D9D5;
+  padding:7px;border-radius:15px;max-width:720px
+}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:10px 12px;color:var(--ink);font-size:13px}
+.search button{border:0;background:var(--brand);color:#fff;border-radius:10px;padding:10px 16px;font-size:12px;font-weight:800;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.chip{border:1px solid #D7D9D5;background:rgba(255,255,255,.7);color:#3A4652;border-radius:999px;padding:5px 9px;font-size:10px;cursor:pointer}
 
-.hero-card{background:#fff;border:1px solid var(--line);border-radius:27px;padding:20px;box-shadow:0 24px 70px rgba(19,34,61,.1)}
-.hero-card-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:13px}
-.hero-card-head small{color:var(--muted);font-weight:700}.hero-card-head strong{font-size:16px}
-.score{background:var(--mint);color:var(--teal);padding:6px 9px;border-radius:999px;font-size:11px;font-weight:850}
-.choice{display:grid;grid-template-columns:58px 1fr auto;gap:12px;align-items:center;padding:13px 0;border-top:1px solid var(--line)}
-.thumb{width:58px;height:58px;border-radius:16px;background:linear-gradient(145deg,#eff5f5,#fff);display:grid;place-items:center}
-.bottle{width:22px;height:40px;border-radius:6px 6px 8px 8px;background:linear-gradient(#fff,#d9e8e7);border:1px solid #c8d8d7;position:relative}.bottle:before{content:"";position:absolute;top:-6px;left:4px;width:12px;height:7px;border-radius:3px 3px 1px 1px;background:var(--teal)}
-.choice h3{font-size:13px;margin:0 0 2px}.choice p{font-size:11px;color:var(--muted);margin:0}.badge{font-size:10px;font-weight:800;padding:5px 7px;border-radius:9px;background:var(--peach);color:#b75540}
-.hero-card-foot{margin-top:12px;background:var(--navy);color:#fff;padding:13px 15px;border-radius:16px;display:flex;align-items:center;justify-content:space-between;gap:14px}.hero-card-foot small{color:#b7c6d0}.hero-card-foot b{font-size:12px;color:#79ddd3}
+.how{
+  background:#fff;border:1px solid #DADCD8;border-radius:22px;padding:18px
+}
+.how-title{font-size:12px;font-weight:850;color:var(--brand);margin-bottom:4px}
+.step{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;padding:13px 0;border-top:1px solid #ECEDE9}
+.step:first-of-type{border-top:0}
+.num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);font-size:11px;font-weight:900}
+.step b{display:block;font-size:13px;margin-bottom:2px}
+.step span{font-size:11px;color:var(--muted)}
 
-.quickstats{padding:0 0 14px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 15px}.stat b{display:block;font-size:13px}.stat small{font-size:11px;color:var(--muted)}
+.section{padding:54px 0}
+.section.white{background:#FAF9F6}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:20px}
+.section-head h2{font-size:28px;line-height:1.3;margin:0;font-weight:850;letter-spacing:-.3px}
+.section-head p{margin:0;color:var(--text);font-size:12px;max-width:520px}
+.eyebrow{font-size:10px;color:var(--brand);font-weight:900;display:block;margin-bottom:5px}
 
-.section{padding:58px 0}.section.white{background:#fff}
-.section-head{display:grid;grid-template-columns:1fr .8fr;gap:24px;align-items:end;margin-bottom:22px}
-.eyebrow{font-size:11px;font-weight:900;color:var(--teal);letter-spacing:.3px}
-h2{font-size:clamp(27px,3.2vw,39px);line-height:1.35;letter-spacing:-.7px;margin:4px 0 0;font-weight:870}
-.section-head p{font-size:13px;color:var(--muted);margin:0}
-
-.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
-.category{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:20px;padding:19px;min-height:156px;transition:.22s}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.category{
+  background:var(--surface);border:1px solid var(--line);border-radius:20px;
+  padding:20px;min-height:150px;transition:.2s
+}
 .category:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-.category:before{content:"";position:absolute;width:92px;height:92px;border-radius:50%;left:-28px;top:-28px;background:var(--mint)}
-.category:nth-child(2):before{background:var(--peach)}.category:nth-child(3):before{background:var(--lav)}.category:nth-child(4):before{background:#f4efff}
-.cat-icon{font-size:22px;position:relative;z-index:1}.category h3{font-size:16px;margin:28px 0 4px}.category p{font-size:11px;color:var(--muted);margin:0}
+.category .ico{width:38px;height:38px;border-radius:12px;background:var(--surface-2);display:grid;place-items:center;font-size:18px;margin-bottom:18px}
+.category:nth-child(2) .ico{background:var(--surface-3)}
+.category:nth-child(3) .ico{background:#EEEFFA}
+.category h3{font-size:16px;margin:0 0 5px}
+.category p{font-size:11px;color:var(--text);margin:0}
 
-.popular{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
-.pop-main{background:linear-gradient(150deg,#0d2433,#123f47);color:#fff;border-radius:24px;padding:26px;min-height:300px;position:relative;overflow:hidden}.pop-main p{color:#c3d0d7;font-size:13px;max-width:560px}.pop-main h3{font-size:26px;margin:6px 0}.pop-main:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:linear-gradient(145deg,#13aa9f,#0b7f79);left:-60px;bottom:-105px;opacity:.9}
-.pop-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.mini-card span{display:inline-block;background:var(--mint);color:var(--teal);font-size:10px;font-weight:800;padding:4px 7px;border-radius:999px}.mini-card h3{font-size:15px;margin:12px 0 5px}.mini-card p{font-size:11px;color:var(--muted);margin:0}.mini-card a{display:inline-block;margin-top:9px;color:var(--teal);font-size:11px;font-weight:800}
+.guides{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.guide{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.guide-top{height:120px;padding:16px;display:flex;align-items:flex-end;background:var(--surface-2)}
+.guide:nth-child(2) .guide-top{background:var(--surface-3)}
+.guide:nth-child(3) .guide-top{background:#EEEFFA}
+.guide-top b{font-size:23px}
+.guide-body{padding:17px}
+.tag{display:inline-block;font-size:9px;font-weight:850;color:var(--brand);background:var(--surface-2);padding:4px 7px;border-radius:999px}
+.guide h3{font-size:15px;margin:10px 0 5px}
+.guide p{font-size:11px;color:var(--text);margin:0}
+.meta{font-size:9px;color:var(--muted);margin-top:10px}
 
-.editorial-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;gap:14px}
-.editorial{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}.editorial-cover{height:170px;background:linear-gradient(135deg,#dff5f2,#fbfffe);display:flex;align-items:end;padding:19px}.editorial:nth-child(2) .editorial-cover{background:linear-gradient(135deg,#fff0e8,#fff)}.editorial:nth-child(3) .editorial-cover{background:linear-gradient(135deg,#edf0ff,#fff)}.editorial-cover b{font-size:30px}.editorial-body{padding:17px}.editorial-body h3{font-size:16px;margin:3px 0 6px}.editorial-body p{font-size:11px;color:var(--muted);margin:0}.meta{font-size:10px;color:#8994a3;margin-top:10px}
+.compare-store{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.panel.dark{background:var(--navy);border-color:var(--navy);color:#fff}
+.panel h3{font-size:20px;margin:5px 0 8px}
+.panel p{font-size:11px;color:var(--text);margin:0 0 15px}
+.panel.dark p{color:#C9D3D8}
+.compare-row{display:grid;grid-template-columns:1.1fr .9fr .9fr;font-size:11px;border-top:1px solid #ECEDE9}
+.compare-row:first-of-type{border-top:0}
+.compare-row>div{padding:10px 8px}
+.good{color:var(--brand);font-weight:850}
+.store{display:grid;grid-template-columns:38px 1fr auto;gap:10px;align-items:center;padding:11px 0;border-top:1px solid rgba(255,255,255,.12)}
+.store:first-of-type{border-top:0}
+.store-logo{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-weight:900}
+.store b{font-size:12px}.store small{display:block;color:#B9C7CE;font-size:9px}
+.soon{font-size:9px;background:rgba(255,255,255,.1);padding:4px 7px;border-radius:999px;color:#D8E3E7}
 
-.compare{display:grid;grid-template-columns:.72fr 1.28fr;gap:16px}
-.compare-copy{background:var(--peach);border:1px solid #ffdcca;border-radius:24px;padding:24px}.compare-copy h3{font-size:23px;margin:7px 0}.compare-copy p{font-size:12px;color:#7b625a}
-.table{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden}
-.row{display:grid;grid-template-columns:1.2fr 1fr 1fr;font-size:12px}.row>div{padding:12px 14px;border-left:1px solid var(--line);border-top:1px solid var(--line)}.row>div:last-child{border-left:0}.row.head{background:#f5f7f9;font-weight:800;color:var(--muted)}.row.head>div{border-top:0}.good{color:var(--teal);font-weight:850}
+.trust-strip{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  padding:14px;background:#E8E4DC;border:1px solid #D8D3C8;border-radius:18px
+}
+.trust-item{padding:8px 10px}
+.trust-item b{display:block;font-size:12px;margin-bottom:2px}
+.trust-item span{font-size:10px;color:#495560}
 
-.stores{display:grid;grid-template-columns:.88fr 1.12fr;gap:16px}.store-copy{background:var(--navy);color:#fff;border-radius:24px;padding:25px}.store-copy h3{font-size:24px;margin:5px 0}.store-copy p{color:#c2d0d8;font-size:12px}.store-list{background:#fff;border:1px solid var(--line);border-radius:24px;padding:9px 18px}
-.store{display:grid;grid-template-columns:40px 1fr auto;gap:11px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.store:last-child{border-bottom:0}.store-logo{width:40px;height:40px;border-radius:12px;background:#f2f5f7;display:grid;place-items:center;font-weight:900}.store b{font-size:13px}.store small{display:block;font-size:10px;color:var(--muted)}.soon{font-size:10px;color:#687487;background:#f4f6f8;padding:4px 7px;border-radius:999px}
+footer{background:#122631;color:#C9D4DA;padding:36px 0}
+.footer-grid{display:grid;grid-template-columns:1.5fr repeat(3,.7fr);gap:26px}
+.footer-brand{font-size:20px;font-weight:900;color:#fff}
+footer p{font-size:10px}
+footer h4{font-size:11px;color:#fff;margin:0 0 8px}
+footer a{display:block;font-size:10px;margin:6px 0}
+.copyright{margin-top:18px;padding-top:14px;border-top:1px solid #28404C;font-size:9px;color:#92A5AE}
 
-.method{display:grid;grid-template-columns:.8fr 1.2fr;gap:16px}.method-copy{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px}.method-copy h3{font-size:21px;margin:5px 0}.method-copy p{font-size:12px;color:var(--muted)}.checks{display:grid;gap:7px;margin-top:14px}.check{display:flex;gap:8px;font-size:11px;color:#526078}.check i{font-style:normal;color:var(--teal);font-weight:900}
-.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.metric{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px 10px;text-align:center}.ring{width:56px;height:56px;border-radius:50%;margin:0 auto 9px;display:grid;place-items:center;background:conic-gradient(var(--teal) 0 78%,#e9edf2 78%);position:relative}.ring:after{content:"";position:absolute;width:43px;height:43px;border-radius:50%;background:#fff}.ring span{position:relative;z-index:1;font-size:9px;font-weight:900}.metric b{display:block;font-size:11px}.metric small{font-size:9px;color:var(--muted)}
-
-.trust{display:grid;grid-template-columns:1fr 1fr;gap:14px}.trust-card{border-radius:24px;padding:24px;background:#fff;border:1px solid var(--line)}.trust-card.dark{background:var(--navy);color:#fff}.trust-card.dark p{color:#c1cfd7}.trust-card h3{font-size:21px;margin:5px 0}.trust-card p{font-size:12px;color:var(--muted)}
-.label{display:inline-block;background:var(--mint);color:var(--teal);font-size:10px;font-weight:850;padding:4px 7px;border-radius:999px}
-
-footer{background:#0c2231;color:#c4d1d8;padding:38px 0}.footer-grid{display:grid;grid-template-columns:1.5fr repeat(3,.7fr);gap:28px}.footer-brand{font-size:22px;font-weight:900;color:#fff}.footer-grid h4{font-size:12px;color:#fff;margin:0 0 10px}.footer-grid a{display:block;font-size:11px;margin:6px 0}.footer-grid p{font-size:11px}.copyright{margin-top:20px;padding-top:15px;border-top:1px solid #233846;font-size:10px;color:#8ea2af}
-
+@media(min-width:1000px){
+  h1,.section-head h2{white-space:nowrap}
+}
 @media(max-width:920px){
   .nav{grid-template-columns:auto 1fr}.menu{display:none}.actions{justify-self:end}
-  .hero-grid,.popular,.compare,.stores,.method,.trust{grid-template-columns:1fr}
-  .categories{grid-template-columns:repeat(2,1fr)}.editorial-grid{grid-template-columns:1fr 1fr}.editorial:first-child{grid-column:1/3}
-  .metrics{grid-template-columns:repeat(3,1fr)}.section-head{grid-template-columns:1fr}
+  .hero-grid,.compare-store{grid-template-columns:1fr}
+  .categories,.guides{grid-template-columns:1fr 1fr}
+  .guides .guide:first-child{grid-column:1/3}
+  .section-head{display:block}.section-head p{margin-top:6px}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:620px){
-  .topbar{display:none}.nav{min-height:64px}.btn-ghost{display:none}
-  .hero{padding:38px 0 32px}.hero-grid{gap:22px}h1{font-size:42px;letter-spacing:-1px}
-  .lead{font-size:14px}.search{border-radius:15px}.stats{grid-template-columns:1fr 1fr}
-  .categories,.editorial-grid,.footer-grid{grid-template-columns:1fr}.editorial:first-child{grid-column:auto}
-  .pop-list{grid-template-columns:1fr}.section{padding:46px 0}.section-head{display:block}.section-head p{margin-top:8px}
-  .metrics{grid-template-columns:repeat(2,1fr)}.row{grid-template-columns:1fr 1fr 1fr;font-size:10px}.row>div{padding:10px 7px}
+  .wrap{width:min(100% - 24px,1180px)}
+  .nav{min-height:62px}.btn-ghost{display:none}.logo{font-size:18px}
+  .hero{padding:24px 0}.hero-box{padding:24px 18px;border-radius:22px}
+  h1{font-size:34px}
+  .hero-copy{font-size:13px}
+  .search{display:grid;grid-template-columns:1fr auto}
+  .categories,.guides,.footer-grid,.trust-strip{grid-template-columns:1fr}
+  .guides .guide:first-child{grid-column:auto}
+  .section{padding:42px 0}.section-head h2{font-size:24px}
 }
 </style>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span><b>سنجو فروشگاه نیست.</b> انتخاب‌ها و فروشگاه‌ها را برای تصمیم بهتر کنار هم می‌گذاریم.</span><span>مستقل · شفاف · مقایسه‌محور</span></div></div>
-<header><div class="wrap nav">
-<a class="logo" href="/"><span class="mark">س</span><span>SENJOO · سنجو</span></a>
-<nav class="menu"><a href="#categories">دسته‌ها</a><a href="#popular">انتخاب‌های سنجو</a><a href="#compare">مقایسه</a><a href="#guides">راهنمای خرید</a><a href="#method">روش امتیازدهی</a></nav>
-<div class="actions"><a class="btn-ghost" href="#trust">درباره سنجو</a><a class="btn" href="#search">چی بخرم؟</a></div>
-</div></header>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/"><span class="logo-mark">س</span><span>SENJOO · سنجو</span></a>
+    <nav class="menu">
+      <a href="#categories">دسته‌ها</a>
+      <a href="#guides">راهنمای خرید</a>
+      <a href="#compare">مقایسه</a>
+      <a href="#about">درباره سنجو</a>
+    </nav>
+    <div class="actions">
+      <a class="btn-ghost" href="#about">روش سنجو</a>
+      <a class="btn" href="#search">چی بخرم؟</a>
+    </div>
+  </div>
+</header>
 
 <main>
-<section class="hero" id="search"><div class="wrap hero-grid">
-<div>
-<span class="kicker"><span class="dot"></span> راهنمای خرید مستقل و داده‌محور</span>
-<h1>کمتر بگرد.<br><em>بهتر انتخاب کن.</em></h1>
-<p class="lead">سنجو برای سؤال ساده‌ی «کدوم رو بخرم؟» ساخته شده؛ محصول‌ها را بر اساس نیاز و بودجه مقایسه می‌کنیم و وقتی آماده خریدی، گزینه‌های چند فروشگاه را کنار هم نشان می‌دهیم.</p>
-<div class="search"><input id="q" placeholder="مثلاً: ضدآفتاب برای پوست چرب تا ۸۰۰ هزار تومان"><button onclick="demoSearch()">بسنج</button></div>
-<div class="chips"><button class="chip" onclick="fill('ضدآفتاب پوست چرب')">ضدآفتاب پوست چرب</button><button class="chip" onclick="fill('بهترین سشوار خانگی')">سشوار خانگی</button><button class="chip" onclick="fill('شامپو موی خشک')">شامپو موی خشک</button><button class="chip" onclick="fill('ساعت هوشمند اقتصادی')">ساعت هوشمند</button></div>
-</div>
-<div class="hero-card">
-<div class="hero-card-head"><div><small>نمونه تصمیم سنجو</small><br><strong>ضدآفتاب روزانه برای پوست چرب</strong></div><span class="score">SCORE · ۸۶</span></div>
-<div class="choice"><div class="thumb"><div class="bottle"></div></div><div><h3>گزینه سبک روزانه</h3><p>بافت سبک · مناسب مصرف روزمره</p></div><span class="badge">ارزش خرید</span></div>
-<div class="choice"><div class="thumb"><div class="bottle" style="filter:hue-rotate(45deg)"></div></div><div><h3>گزینه مقاوم‌تر</h3><p>مناسب استفاده بیرون و تمدید منظم</p></div><span class="badge" style="background:var(--mint);color:var(--teal)">کاربرد خاص</span></div>
-<div class="hero-card-foot"><div><small>اصل سنجو</small><br><strong>اول نیاز، بعد محصول.</strong></div><b>مقایسه قابل توضیح ←</b></div>
-</div>
-</div></section>
+<section class="hero" id="search">
+  <div class="wrap">
+    <div class="hero-box">
+      <div class="hero-grid">
+        <div>
+          <span class="kicker">راهنمای مستقل انتخاب و مقایسه</span>
+          <h1>قبل از خرید، بهتر بسنج.</h1>
+          <p class="hero-copy">سنجو کمک می‌کند گزینه‌های مناسب را سریع‌تر پیدا کنی، تفاوت‌های مهم را ببینی و بعد بین چند فروشگاه مسیر خریدت را انتخاب کنی.</p>
+          <div class="search">
+            <input id="q" placeholder="مثلاً: ضدآفتاب پوست چرب تا ۸۰۰ هزار تومان">
+            <button onclick="demoSearch()">بسنج</button>
+          </div>
+          <div class="chips">
+            <button class="chip" onclick="fill('ضدآفتاب پوست چرب')">ضدآفتاب پوست چرب</button>
+            <button class="chip" onclick="fill('سشوار خانگی')">سشوار خانگی</button>
+            <button class="chip" onclick="fill('شامپو موی خشک')">شامپو موی خشک</button>
+          </div>
+        </div>
+        <aside class="how">
+          <div class="how-title">سنجو چطور کمک می‌کند؟</div>
+          <div class="step"><div class="num">۱</div><div><b>نیازت را مشخص کن</b><span>بودجه، کاربرد و اولویت واقعی.</span></div></div>
+          <div class="step"><div class="num">۲</div><div><b>گزینه‌ها را مقایسه کن</b><span>فقط تفاوت‌هایی که تصمیم را عوض می‌کنند.</span></div></div>
+          <div class="step"><div class="num">۳</div><div><b>فروشگاه را انتخاب کن</b><span>چند مسیر خرید، بدون وابستگی به یک فروشگاه.</span></div></div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="quickstats"><div class="wrap stats">
-<div class="stat"><b>چندفروشگاهی</b><small>طراحی‌شده برای Digikala، SnappShop و فروشگاه‌های بعدی</small></div>
-<div class="stat"><b>مقایسه‌محور</b><small>تمرکز بر تفاوتی که تصمیم را عوض می‌کند</small></div>
-<div class="stat"><b>شفاف</b><small>کمیسیون نباید رتبه تحریریه را تعیین کند</small></div>
-<div class="stat"><b>به‌روز</b><small>قیمت و موجودی فروشگاه مقصد ملاک نهایی است</small></div>
-</div></section>
+<section class="section" id="categories">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">دسته‌های اصلی</span><h2>از کجا شروع کنیم؟</h2></div>
+      <p>فاز اول سنجو روی دسته‌هایی متمرکز است که انتخاب در آن‌ها به مقایسه واقعی نیاز دارد.</p>
+    </div>
+    <div class="categories">
+      <a class="category" href="#guides">
+        <div class="ico">✦</div>
+        <h3>زیبایی و مراقبت شخصی</h3>
+        <p>پوست، مو، ابزارهای زیبایی و مراقبت روزمره</p>
+      </a>
+      <a class="category" href="#guides">
+        <div class="ico">⌚</div>
+        <h3>تکنولوژی مصرفی</h3>
+        <p>گجت‌ها، لوازم جانبی و انتخاب‌های ارزش‌محور</p>
+      </a>
+      <a class="category" href="#guides">
+        <div class="ico">⌂</div>
+        <h3>خانه و زندگی</h3>
+        <p>نظافت، لوازم هوشمند و تجهیزات خانه</p>
+      </a>
+    </div>
+  </div>
+</section>
 
-<section class="section" id="categories"><div class="wrap">
-<div class="section-head"><div><span class="eyebrow">مسیرهای خرید</span><h2>از نیاز شروع می‌کنیم، نه از لیست محصول.</h2></div><p>هر دسته یک مسیر تصمیم دارد: شناخت نیاز، مقایسه گزینه‌ها و در پایان انتخاب فروشگاه.</p></div>
-<div class="categories">
-<a class="category" href="#beauty"><div class="cat-icon">✦</div><h3>زیبایی و مراقبت شخصی</h3><p>پوست، مو، ابزارهای زیبایی و مراقبت روزمره</p></a>
-<a class="category" href="#tech"><div class="cat-icon">⌚</div><h3>تکنولوژی مصرفی</h3><p>گجت‌ها، لوازم جانبی و انتخاب‌های ارزش‌محور</p></a>
-<a class="category" href="#home"><div class="cat-icon">⌂</div><h3>خانه و زندگی</h3><p>نظافت، لوازم هوشمند و تجهیزات خانه</p></a>
-<a class="category" href="#guides"><div class="cat-icon">↗</div><h3>راهنماهای تصمیم</h3><p>Best، مقایسه، بودجه‌ای و Use-case</p></a>
-</div></div></section>
+<section class="section white" id="guides">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">راهنماهای منتخب</span><h2>برای تصمیم، نه برای پر کردن صفحه.</h2></div>
+      <p>هر راهنما با یک سؤال مشخص شروع می‌شود و به یک تصمیم قابل‌فهم می‌رسد.</p>
+    </div>
+    <div class="guides">
+      <article class="guide">
+        <div class="guide-top"><b>SPF</b></div>
+        <div class="guide-body"><span class="tag">مراقبت پوست</span><h3>چطور ضدآفتاب مناسب انتخاب کنیم؟</h3><p>نوع پوست، بافت، استفاده روزانه و ارزش خرید.</p><div class="meta">راهنمای پایه · در حال تکمیل</div></div>
+      </article>
+      <article class="guide">
+        <div class="guide-top"><b>HAIR</b></div>
+        <div class="guide-body"><span class="tag">مراقبت مو</span><h3>سشوار خوب چه ویژگی‌ای دارد؟</h3><p>توان، کنترل حرارت، وزن و ارگونومی.</p><div class="meta">راهنمای خرید · در حال تکمیل</div></div>
+      </article>
+      <article class="guide">
+        <div class="guide-top"><b>SMART</b></div>
+        <div class="guide-body"><span class="tag">خانه هوشمند</span><h3>جارو رباتیک برای خانه فرش‌دار</h3><p>برس، نقشه‌برداری، عبور از لبه و هزینه نگهداری.</p><div class="meta">راهنمای مقایسه · در صف انتشار</div></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-<section class="section white" id="popular"><div class="wrap">
-<div class="section-head"><div><span class="eyebrow">SENJOO PICKS</span><h2>بهترین برای هر موقعیت، نه یک برنده برای همه.</h2></div><p>انتخاب‌های سنجو بر اساس سناریو ساخته می‌شوند: بهترین کلی، اقتصادی، پریمیوم و مناسب یک نیاز خاص.</p></div>
-<div class="popular">
-<article class="pop-main" id="beauty"><span class="label" style="background:#193e47;color:#83e0d6">فاز اول</span><h3>زیبایی؛ جایی که انتخاب اشتباه تکرار می‌شود.</h3><p>خرید تکرارشونده، تنوع زیاد و تفاوت‌های واقعی بین گزینه‌ها باعث شده Beauty نقطه شروع سنجو باشد.</p></article>
-<div class="pop-list">
-<article class="mini-card"><span>برای بودجه</span><h3>زیر سقف بودجه چه بخریم؟</h3><p>ارزان‌ترین را معرفی نمی‌کنیم؛ ارزش خرید را می‌سنجیم.</p><a href="#guides">راهنمای بودجه‌ای ←</a></article>
-<article class="mini-card" id="tech"><span>برای تکنولوژی</span><h3>مشخصات زیاد، تصمیم ساده</h3><p>فقط ویژگی‌هایی را برجسته می‌کنیم که روی تجربه خرید اثر دارند.</p><a href="#compare">مقایسه نمونه ←</a></article>
-<article class="mini-card" id="home"><span>برای خانه</span><h3>هزینه مالکیت را هم ببین</h3><p>قطعه مصرفی، نگهداری و سازگاری بخشی از ارزش خرید هستند.</p><a href="#method">روش سنجو ←</a></article>
-<article class="mini-card"><span>برای خرید سریع</span><h3>سنجو در ۳۰ ثانیه</h3><p>بخر اگر، نخر اگر، جایگزین و مسیر خرید در یک نگاه.</p><a href="#guides">نمونه راهنما ←</a></article>
-</div>
-</div></div></section>
+<section class="section" id="compare">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">مقایسه و خرید</span><h2>تفاوت مهم را ببین؛ بعد فروشگاه را انتخاب کن.</h2></div>
+      <p>سنجو به‌جای یک «برنده مطلق»، نشان می‌دهد هر گزینه برای چه کسی مناسب‌تر است.</p>
+    </div>
+    <div class="compare-store">
+      <div class="panel">
+        <span class="tag">نمونه مقایسه</span>
+        <h3>سبک روزانه یا مقاوم‌تر؟</h3>
+        <div class="compare-row"><div><b>معیار</b></div><div><b>A</b></div><div><b>B</b></div></div>
+        <div class="compare-row"><div>استفاده روزانه</div><div class="good">بهتر</div><div>خوب</div></div>
+        <div class="compare-row"><div>ماندگاری بیرون</div><div>متوسط</div><div class="good">بهتر</div></div>
+        <div class="compare-row"><div>پیشنهاد سنجو</div><div class="good">روزانه</div><div class="good">بیرون</div></div>
+      </div>
+      <div class="panel dark">
+        <span class="tag" style="background:rgba(255,255,255,.1);color:#7FE0D6">چندفروشگاهی</span>
+        <h3>یک محصول، چند مسیر خرید.</h3>
+        <p>پس از تأیید رسانه Affilio، لینک‌های واجد شرایط فروشگاه‌ها در همین بخش نمایش داده می‌شوند.</p>
+        <div class="store"><div class="store-logo">D</div><div><b>Digikala</b><small>لینک افیلیت پس از تأیید رسانه</small></div><span class="soon">به‌زودی</span></div>
+        <div class="store"><div class="store-logo">S</div><div><b>SnappShop</b><small>مسیر خرید دوم برای کاهش وابستگی</small></div><span class="soon">به‌زودی</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="section" id="guides"><div class="wrap">
-<div class="section-head"><div><span class="eyebrow">EDITORIAL GUIDES</span><h2>راهنماهایی که برای تصمیم نوشته می‌شوند.</h2></div><p>سه قالب اصلی سنجو: انتخاب، مقایسه و راهنمای خرید بر اساس نیاز.</p></div>
-<div class="editorial-grid">
-<article class="editorial"><div class="editorial-cover"><b>SPF</b></div><div class="editorial-body"><span class="label">مراقبت پوست</span><h3>چطور ضدآفتاب مناسب انتخاب کنیم؟</h3><p>نوع استفاده، بافت، سازگاری، حجم و تمدید؛ نه فقط عدد SPF.</p><div class="meta">راهنمای پایه · در حال تکمیل</div></div></article>
-<article class="editorial"><div class="editorial-cover"><b>HAIR</b></div><div class="editorial-body"><span class="label">مراقبت مو</span><h3>سشوار خوب چه ویژگی‌ای دارد؟</h3><p>توان، کنترل حرارت، وزن و ارگونومی را کنار هم می‌بینیم.</p><div class="meta">راهنمای خرید · در حال تکمیل</div></div></article>
-<article class="editorial"><div class="editorial-cover"><b>SMART</b></div><div class="editorial-body"><span class="label">خانه هوشمند</span><h3>جارو رباتیک برای خانه فرش‌دار</h3><p>عبور از لبه، برس، نقشه‌برداری و هزینه قطعات مصرفی.</p><div class="meta">مقایسه · در صف انتشار</div></div></article>
-</div></div></section>
-
-<section class="section white" id="compare"><div class="wrap">
-<div class="section-head"><div><span class="eyebrow">COMPARE-FIRST</span><h2>تفاوتی را نشان می‌دهیم که تصمیم را عوض می‌کند.</h2></div><p>جدول مشخصات کافی نیست؛ مقایسه سنجو روی Trade-offها تمرکز می‌کند.</p></div>
-<div class="compare">
-<div class="compare-copy"><span class="label">نمونه مقایسه</span><h3>سبک روزانه یا مقاوم‌تر؟</h3><p>به‌جای یک برنده مطلق، مشخص می‌کنیم هر گزینه برای چه کسی مناسب‌تر است.</p><a class="btn" href="#guides" style="display:inline-block;margin-top:10px">دیدن راهنماها</a></div>
-<div class="table">
-<div class="row head"><div>معیار</div><div>گزینه A</div><div>گزینه B</div></div>
-<div class="row"><div>استفاده روزانه</div><div class="good">قوی‌تر</div><div>خوب</div></div>
-<div class="row"><div>ماندگاری بیرون</div><div>متوسط</div><div class="good">قوی‌تر</div></div>
-<div class="row"><div>حس سبک روی پوست</div><div class="good">بهتر</div><div>بسته به مدل</div></div>
-<div class="row"><div>ارزش خرید</div><div>وابسته به قیمت</div><div>وابسته به قیمت</div></div>
-<div class="row"><div><b>پیشنهاد سنجو</b></div><div class="good">مصرف روزانه</div><div class="good">استفاده بیرون</div></div>
-</div>
-</div></div></section>
-
-<section class="section"><div class="wrap">
-<div class="section-head"><div><span class="eyebrow">MULTI-STORE</span><h2>چی بخرم؟ و از کجا بخرم؟</h2></div><p>سنجو به یک فروشگاه وابسته نیست؛ ساختار برای چند فروشگاه طراحی شده است.</p></div>
-<div class="stores">
-<div class="store-copy"><span class="label" style="background:#193e47;color:#83e0d6">در حال اتصال</span><h3>یک محصول، چند مسیر خرید.</h3><p>بعد از تأیید رسانه Affilio، لینک‌های واجد شرایط Digikala و SnappShop کنار هم قرار می‌گیرند.</p></div>
-<div class="store-list">
-<div class="store"><div class="store-logo">D</div><div><b>Digikala</b><small>لینک افیلیت پس از تأیید رسانه</small></div><span class="soon">به‌زودی</span></div>
-<div class="store"><div class="store-logo">S</div><div><b>SnappShop</b><small>مسیر خرید دوم برای کاهش وابستگی</small></div><span class="soon">به‌زودی</span></div>
-<div class="store"><div class="store-logo">+</div><div><b>فروشگاه‌های دیگر</b><small>در صورت حضور در شبکه افیلیت</small></div><span class="soon">قابل توسعه</span></div>
-</div></div></div></section>
-
-<section class="section white" id="method"><div class="wrap">
-<div class="section-head"><div><span class="eyebrow">SENJOO SCORE</span><h2>امتیازی که بتوانیم توضیحش بدهیم.</h2></div><p>سنجو در فاز اول ادعای تست آزمایشگاهی ندارد؛ امتیازها باید به داده و معیار قابل بررسی متکی باشند.</p></div>
-<div class="method">
-<div class="method-copy"><span class="label">روش سنجو</span><h3>وزن معیارها برای هر دسته فرق می‌کند.</h3><p>برای یک ضدآفتاب، بافت و نوع پوست مهم است؛ برای سشوار، کنترل حرارت و ارگونومی.</p><div class="checks"><div class="check"><i>✓</i><span>منبع هر ادعا مشخص باشد</span></div><div class="check"><i>✓</i><span>کمیسیون، رتبه تحریریه را تعیین نکند</span></div><div class="check"><i>✓</i><span>تاریخ آخرین بازبینی نمایش داده شود</span></div></div></div>
-<div class="metrics">
-<div class="metric"><div class="ring"><span>ارزش</span></div><b>Value</b><small>قیمت/کارایی</small></div>
-<div class="metric"><div class="ring" style="background:conic-gradient(var(--teal) 0 70%,#e9edf2 70%)"><span>ویژگی</span></div><b>Features</b><small>ویژگی مؤثر</small></div>
-<div class="metric"><div class="ring" style="background:conic-gradient(var(--teal) 0 82%,#e9edf2 82%)"><span>نظر</span></div><b>Users</b><small>الگوی بازخورد</small></div>
-<div class="metric"><div class="ring" style="background:conic-gradient(var(--teal) 0 74%,#e9edf2 74%)"><span>موجودی</span></div><b>Availability</b><small>دسترسی بازار</small></div>
-<div class="metric"><div class="ring" style="background:conic-gradient(var(--teal) 0 76%,#e9edf2 76%)"><span>قیمت</span></div><b>Price</b><small>جایگاه قیمت</small></div>
-</div></div></div></section>
-
-<section class="section" id="trust"><div class="wrap">
-<div class="trust">
-<div class="trust-card dark"><span class="label" style="background:#193e47;color:#83e0d6">اعتماد</span><h3>سنجو فروشگاه نیست.</h3><p>سفارش، پرداخت، ارسال و مرجوعی در فروشگاه مقصد انجام می‌شود. خرید واجد شرایط از لینک افیلیت ممکن است برای سنجو کمیسیون ایجاد کند.</p><div class="checks"><div class="check"><i>✓</i><span>شفافیت درباره لینک افیلیت</span></div><div class="check"><i>✓</i><span>بدون ادعای تست فیزیکی در صورت انجام نشدن تست</span></div></div></div>
-<div class="trust-card"><span class="label">سیاست تحریریه</span><h3>اول کاربر، بعد کمیسیون.</h3><p>رتبه و توصیه نباید صرفاً بر اساس نرخ کمیسیون باشد. در موضوعات پزشکی، سنجو جایگزین متخصص نیست.</p><div class="checks"><div class="check"><i>✓</i><span>قیمت و موجودی فروشگاه مقصد ملاک نهایی است</span></div><div class="check"><i>✓</i><span>محتوا باید تاریخ بازبینی داشته باشد</span></div></div></div>
-</div></div></section>
+<section class="section white" id="about">
+  <div class="wrap">
+    <div class="trust-strip">
+      <div class="trust-item"><b>شفاف</b><span>کمیسیون نباید رتبه تحریریه را تعیین کند.</span></div>
+      <div class="trust-item"><b>مستقل</b><span>سنجو فروشگاه نیست و سفارش را مدیریت نمی‌کند.</span></div>
+      <div class="trust-item"><b>واقع‌بین</b><span>قیمت و موجودی فروشگاه مقصد ملاک نهایی است.</span></div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap"><div class="footer-grid">
-<div><div class="footer-brand">SENJOO · سنجو</div><p>راهنمای مستقل انتخاب، مقایسه و خرید هوشمندانه.</p></div>
-<div><h4>سنجو</h4><a href="#trust">درباره ما</a><a href="#method">روش امتیازدهی</a><a href="#trust">سیاست افیلیت</a></div>
-<div><h4>دسته‌ها</h4><a href="#beauty">زیبایی</a><a href="#tech">تکنولوژی</a><a href="#home">خانه</a></div>
-<div><h4>راهنما</h4><a href="#guides">راهنمای خرید</a><a href="#compare">مقایسه‌ها</a><a href="#popular">انتخاب‌های سنجو</a></div>
-</div><div class="copyright">© 2026 SENJOO — اطلاعات قیمت و موجودی ممکن است تغییر کند. سنجو فروشنده کالا نیست.</div></div></footer>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><div class="footer-brand">SENJOO · سنجو</div><p>راهنمای مستقل انتخاب، مقایسه و خرید هوشمندانه.</p></div>
+      <div><h4>سنجو</h4><a href="#about">درباره ما</a><a href="#about">سیاست افیلیت</a></div>
+      <div><h4>دسته‌ها</h4><a href="#categories">زیبایی</a><a href="#categories">تکنولوژی</a><a href="#categories">خانه</a></div>
+      <div><h4>راهنما</h4><a href="#guides">راهنمای خرید</a><a href="#compare">مقایسه</a></div>
+    </div>
+    <div class="copyright">© 2026 SENJOO — سنجو فروشنده کالا نیست. قیمت و موجودی ممکن است تغییر کند.</div>
+  </div>
+</footer>
 
 <script>
 function fill(t){document.getElementById('q').value=t;document.getElementById('q').focus()}
-function demoSearch(){let q=document.getElementById('q').value.trim();if(!q){document.getElementById('q').focus();return}document.getElementById('guides').scrollIntoView({behavior:'smooth'});}
+function demoSearch(){let q=document.getElementById('q').value.trim();if(!q){document.getElementById('q').focus();return}document.getElementById('guides').scrollIntoView({behavior:'smooth'})}
 </script>
 </body>
 </html>
