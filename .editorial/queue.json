@@ -3,7 +3,7 @@
   "schedule": "30 5 * * 2,4,6 UTC",
   "cadence": "Tuesday / Thursday / Saturday",
   "queue_floor": 6,
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "items": [
     {
       "slug": "guide-air-fryer-buying.html",
@@ -14,9 +14,10 @@
       "category_page": "home.html",
       "image": "assets/home.jpg",
       "card_label": "سرخ‌کن بدون روغن",
-      "status": "queued",
+      "status": "published",
       "priority": 10,
-      "draft": ".editorial/drafts/guide-air-fryer-buying.html"
+      "draft": ".editorial/drafts/guide-air-fryer-buying.html",
+      "published_at": "2026-10-16"
     },
     {
       "slug": "compare-stick-vacuum-vs-canister.html",
@@ -92,9 +93,10 @@
       "category_page": "technology.html",
       "image": "assets/technology.jpg",
       "card_label": "ساعت هوشمند یا مچ‌بند",
-      "status": "backlog",
+      "status": "queued",
       "priority": 70,
-      "draft": ".editorial/drafts/compare-smartwatch-vs-fitness-band.html"
+      "draft": ".editorial/drafts/compare-smartwatch-vs-fitness-band.html",
+      "promoted_at": "2026-10-16"
     },
     {
       "slug": "compare-earbuds-vs-over-ear.html",

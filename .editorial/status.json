@@ -1,9 +1,9 @@
 {
   "publisher": "github-actions-static-html",
   "schedule": "30 5 * * 2,4,6 UTC",
-  "queued": 6,
-  "backlog": 6,
-  "published": 0,
   "queue_floor": 6,
-  "last_publish": null
+  "queued": 6,
+  "backlog": 5,
+  "published": 1,
+  "last_publish": "https://senjoo.ir/guide-air-fryer-buying.html"
 }
