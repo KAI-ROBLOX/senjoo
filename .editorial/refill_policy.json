@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-17",
+  "queue_floor": 6,
+  "backlog_floor": 4,
+  "refill_when_at_or_below_floor": true,
+  "max_new_full_articles_per_controller_cycle": 2,
+  "publisher": "github-actions-static-html",
+  "publish_schedule": "30 5 * * 2,4,6 UTC",
+  "max_publications_per_run": 1,
+  "selection_priority": [
+    "verified-active-affilio-high-commercial-intent",
+    "product-or-model-comparison",
+    "category-buying-guide",
+    "supporting-informational-topical-authority"
+  ],
+  "required_inputs": [
+    "Iranian search intent",
+    "SEO opportunity",
+    "Digikala 7-day and 30-day evidence",
+    "verified active Affilio products",
+    "existing live SENJOO pages",
+    "queue and backlog",
+    "keyword cannibalization check",
+    "internal-link opportunity"
+  ],
+  "quality_gates": {
+    "natural_persian": true,
+    "independent_title_h1_meta": true,
+    "canonical": true,
+    "robots": "index,follow",
+    "article_schema": true,
+    "breadcrumb_schema": true,
+    "minimum_internal_links": 3,
+    "recommended_internal_links": 5,
+    "no_hardcoded_unstable_price": true,
+    "no_unverified_product_claims": true,
+    "affiliate_exact_destination_only": true
+  },
+  "affiliate_attributes": {
+    "rel": "sponsored nofollow noopener",
+    "data-affiliate": "true",
+    "data-merchant": "digikala"
+  }
+}
