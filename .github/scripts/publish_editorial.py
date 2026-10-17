@@ -1,8 +1,8 @@
 from pathlib import Path
 import json,re,html,datetime,sys
 ROOT=Path(__file__).resolve().parents[2]
-Q=ROOT/".editorial/queue.json"; STATUS=ROOT/".editorial/status.json"; LAST=ROOT/".editorial/last_publish.json"; GUIDES=ROOT/"guides.html"; COMPARISONS=ROOT/"comparisons.html"; ARTICLES=ROOT/"articles.html"; SITEMAP=ROOT/"sitemap.xml"
-GUIDE_MARK="<!-- EDITORIAL_GUIDES_INSERT -->"; COMPARE_MARK="<!-- EDITORIAL_COMPARISONS_INSERT -->"; ARTICLE_MARK="<!-- EDITORIAL_ARTICLES_INSERT -->"; CAT_MARK="<!-- EDITORIAL_CATEGORY_INSERT -->"
+Q=ROOT/".editorial/queue.json"; STATUS=ROOT/".editorial/status.json"; LAST=ROOT/".editorial/last_publish.json"; GUIDES=ROOT/"guides.html"; COMPARISONS=ROOT/"comparisons.html"; ARTICLES=ROOT/"articles.html"; SITEMAP=ROOT/"sitemap.xml"; HOME=ROOT/"index.html"
+GUIDE_MARK="<!-- EDITORIAL_GUIDES_INSERT -->"; COMPARE_MARK="<!-- EDITORIAL_COMPARISONS_INSERT -->"; ARTICLE_MARK="<!-- EDITORIAL_ARTICLES_INSERT -->"; CAT_MARK="<!-- EDITORIAL_CATEGORY_INSERT -->"; HOME_START="<!-- EDITORIAL_HOME_LATEST_START -->"; HOME_END="<!-- EDITORIAL_HOME_LATEST_END -->"
 def read(p): return p.read_text(encoding="utf-8")
 def write(p,s): p.write_text(s,encoding="utf-8")
 def extract(pattern,text,label):
@@ -21,6 +21,17 @@ def ensure_marker(path,marker):
     repl=hit.group(1)+body+marker+hit.group(3)
     s=s[:hit.start()]+repl+s[hit.end():]
     write(path,s)
+
+def update_home_latest(item):
+    s=read(HOME)
+    if HOME_START not in s or HOME_END not in s: raise SystemExit("Homepage latest markers missing")
+    before,rest=s.split(HOME_START,1); block,after=rest.split(HOME_END,1)
+    label="مقایسه" if item["slug"].startswith("compare-") else "راهنمای خرید"
+    card=f'<a class="card" href="{html.escape(item["slug"])}"><img src="{html.escape(item["image"])}" alt="{html.escape(item["card_label"])}"><div class="body"><span class="kicker">{label}</span><h3>{html.escape(item["title"])}</h3><p>{html.escape(item["meta_description"])}</p></div></a>'
+    cards=re.findall(r'<a class="card".*?</a>',block,re.S)
+    cards=[x for x in cards if f'href="{item["slug"]}"' not in x]
+    write(HOME,before+HOME_START+card+"".join(cards[:5])+HOME_END+after)
+
 def validate_queue(doc):
     for key in ("slug","title","h1"):
         vals=[x[key].strip() for x in doc["items"]]
@@ -61,6 +72,7 @@ a=read(ARTICLES)
 if item["slug"] not in a: write(ARTICLES,a.replace(ARTICLE_MARK,card+ARTICLE_MARK))
 c=read(category); cat_card=f'<a class="card" href="{html.escape(item["slug"])}"><img src="{html.escape(item["image"])}"><div class="body"><h3>{html.escape(item["card_label"])}</h3></div></a>'
 if item["slug"] not in c: write(category,c.replace(CAT_MARK,cat_card+CAT_MARK))
+update_home_latest(item)
 sm=read(SITEMAP); url=f"https://senjoo.ir/{item['slug']}"
 if url not in sm: write(SITEMAP,sm.replace("</urlset>",f'<url><loc>{url}</loc><lastmod>{today}</lastmod></url></urlset>'))
 item["status"]="published"; item["published_at"]=today
