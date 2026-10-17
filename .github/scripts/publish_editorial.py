@@ -80,6 +80,9 @@ reserve=sorted([x for x in doc["items"] if x["status"]=="backlog"],key=lambda x:
 if reserve: reserve[0]["status"]="queued"; reserve[0]["promoted_at"]=today
 doc["updated_at"]=today; write(Q,json.dumps(doc,ensure_ascii=False,indent=2))
 counts={k:sum(1 for x in doc["items"] if x["status"]==k) for k in ("queued","backlog","published")}
-write(STATUS,json.dumps({"publisher":"github-actions-static-html","schedule":doc["schedule"],"queue_floor":doc["queue_floor"],**counts,"last_publish":url},ensure_ascii=False,indent=2))
+queue_floor=int(doc.get("queue_floor",6)); backlog_floor=int(doc.get("backlog_floor",4))
+next_items=sorted([x for x in doc["items"] if x["status"]=="queued"],key=lambda x:(x["priority"],x["slug"]))
+status_payload={"publisher":"github-actions-static-html","schedule":doc["schedule"],"queue_floor":queue_floor,"backlog_floor":backlog_floor,**counts,"refill_needed":counts["queued"]<=queue_floor or counts["backlog"]<=backlog_floor,"next_slug":next_items[0]["slug"] if next_items else None,"next_title":next_items[0]["title"] if next_items else None,"last_publish":url}
+write(STATUS,json.dumps(status_payload,ensure_ascii=False,indent=2))
 write(LAST,json.dumps({"slug":item["slug"],"url":url,"published_at":today},ensure_ascii=False,indent=2))
 print("PUBLISHED",url)
