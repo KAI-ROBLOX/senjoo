@@ -20,6 +20,9 @@ if '"@type": "Article"' not in article and '"@type":"Article"' not in article:ra
 if article.count('href="')<5:raise SystemExit("Internal links missing live")
 status,sm=get("https://senjoo.ir/sitemap.xml")
 if status!=200 or url not in sm:raise SystemExit("Sitemap inclusion failed")
-status,hub=get("https://senjoo.ir/guides.html")
-if status!=200 or slug not in hub:raise SystemExit("Inbound guide hub link failed")
+hub_url="https://senjoo.ir/comparisons.html" if slug.startswith("compare-") else "https://senjoo.ir/guides.html"
+status,hub=get(hub_url)
+if status!=200 or slug not in hub:raise SystemExit("Inbound content hub link failed")
+status,articles=get("https://senjoo.ir/articles.html")
+if status!=200 or slug not in articles:raise SystemExit("Inbound articles hub link failed")
 print("LIVE_VERIFY_OK",url)

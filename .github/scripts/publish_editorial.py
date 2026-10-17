@@ -1,8 +1,8 @@
 from pathlib import Path
 import json,re,html,datetime,sys
 ROOT=Path(__file__).resolve().parents[2]
-Q=ROOT/".editorial/queue.json"; STATUS=ROOT/".editorial/status.json"; LAST=ROOT/".editorial/last_publish.json"; GUIDES=ROOT/"guides.html"; SITEMAP=ROOT/"sitemap.xml"
-GUIDE_MARK="<!-- EDITORIAL_GUIDES_INSERT -->"; CAT_MARK="<!-- EDITORIAL_CATEGORY_INSERT -->"
+Q=ROOT/".editorial/queue.json"; STATUS=ROOT/".editorial/status.json"; LAST=ROOT/".editorial/last_publish.json"; GUIDES=ROOT/"guides.html"; COMPARISONS=ROOT/"comparisons.html"; ARTICLES=ROOT/"articles.html"; SITEMAP=ROOT/"sitemap.xml"
+GUIDE_MARK="<!-- EDITORIAL_GUIDES_INSERT -->"; COMPARE_MARK="<!-- EDITORIAL_COMPARISONS_INSERT -->"; ARTICLE_MARK="<!-- EDITORIAL_ARTICLES_INSERT -->"; CAT_MARK="<!-- EDITORIAL_CATEGORY_INSERT -->"
 def read(p): return p.read_text(encoding="utf-8")
 def write(p,s): p.write_text(s,encoding="utf-8")
 def extract(pattern,text,label):
@@ -47,13 +47,18 @@ if not draft.exists():raise SystemExit(f"Draft missing: {draft}")
 text=read(draft);validate_draft(item,text);scan_duplicates(item)
 today=datetime.datetime.now(datetime.timezone.utc).date().isoformat()
 text=text.replace("__PUBLISH_DATE__",today)
+text=text.replace('<a href="comparisons.html">مقایسه</a><a href="about.html">','<a href="comparisons.html">مقایسه</a><a href="articles.html">مقالات</a><a href="about.html">')
+text=text.replace('<a href="comparisons.html">مقایسه‌ها</a>','<a href="comparisons.html">مقایسه‌ها</a><a href="articles.html">مقالات</a>')
 dest=ROOT/item["slug"]
 if dest.exists():raise SystemExit(f"Destination already exists: {dest}")
 write(dest,text)
-ensure_marker(GUIDES,GUIDE_MARK); category=ROOT/item["category_page"]; ensure_marker(category,CAT_MARK)
+hub=COMPARISONS if item["slug"].startswith("compare-") else GUIDES; hub_mark=COMPARE_MARK if hub==COMPARISONS else GUIDE_MARK
+ensure_marker(hub,hub_mark); ensure_marker(ARTICLES,ARTICLE_MARK); category=ROOT/item["category_page"]; ensure_marker(category,CAT_MARK)
 card=f'<a class="card" href="{html.escape(item["slug"])}"><img src="{html.escape(item["image"])}" alt="{html.escape(item["card_label"])}"><div class="body"><h3>{html.escape(item["title"])}</h3><p>{html.escape(item["meta_description"])}</p></div></a>'
-g=read(GUIDES)
-if item["slug"] not in g: write(GUIDES,g.replace(GUIDE_MARK,card+GUIDE_MARK))
+g=read(hub)
+if item["slug"] not in g: write(hub,g.replace(hub_mark,card+hub_mark))
+a=read(ARTICLES)
+if item["slug"] not in a: write(ARTICLES,a.replace(ARTICLE_MARK,card+ARTICLE_MARK))
 c=read(category); cat_card=f'<a class="card" href="{html.escape(item["slug"])}"><img src="{html.escape(item["image"])}"><div class="body"><h3>{html.escape(item["card_label"])}</h3></div></a>'
 if item["slug"] not in c: write(category,c.replace(CAT_MARK,cat_card+CAT_MARK))
 sm=read(SITEMAP); url=f"https://senjoo.ir/{item['slug']}"
