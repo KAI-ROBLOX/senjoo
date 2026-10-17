@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-17",
+  "site": "https://senjoo.ir",
+  "policy": {
+    "max_urls_per_manual_batch": 10,
+    "priority": [
+      "strong-commercial-reviews",
+      "updated-guides",
+      "hubs-and-categories"
+    ],
+    "never_repeat_submitted_without_material_reason": true
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "status": "pending_user_submission",
+      "urls": [
+        {
+          "priority": 1,
+          "url": "https://senjoo.ir/review-anker-soundcore-r50i-a3949.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 2,
+          "url": "https://senjoo.ir/review-anker-r50i-nc.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 3,
+          "url": "https://senjoo.ir/review-qcy-t13-anc2.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 4,
+          "url": "https://senjoo.ir/review-samsung-galaxy-a17-4g-128-4.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 5,
+          "url": "https://senjoo.ir/review-samsung-galaxy-a07-64-4.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 6,
+          "url": "https://senjoo.ir/review-xiaomi-redmi-powerbank-20000-18w.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 7,
+          "url": "https://senjoo.ir/review-hadron-a10-1.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 8,
+          "url": "https://senjoo.ir/review-samsung-galaxy-a37-256-8.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 9,
+          "url": "https://senjoo.ir/review-sam-ua32h6000mhchd.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 10,
+          "url": "https://senjoo.ir/review-pars-khazar-fh2000p.html",
+          "manual_status": "pending",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "status": "hold_until_needed",
+      "urls": [
+        {
+          "priority": 11,
+          "url": "https://senjoo.ir/review-sam-ua50cu7750cc.html",
+          "manual_status": "not_yet_offered",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 12,
+          "url": "https://senjoo.ir/review-hadron-p103.html",
+          "manual_status": "not_yet_offered",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 13,
+          "url": "https://senjoo.ir/review-prime-c-prime-fusion-water-spf50.html",
+          "manual_status": "not_yet_offered",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 14,
+          "url": "https://senjoo.ir/review-vitalayer-activit-face-wash.html",
+          "manual_status": "not_yet_offered",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 15,
+          "url": "https://senjoo.ir/review-racuten-prebiotic-moisturizer.html",
+          "manual_status": "not_yet_offered",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 16,
+          "url": "https://senjoo.ir/review-vitalayer-hydravit-spray.html",
+          "manual_status": "not_yet_offered",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        },
+        {
+          "priority": 17,
+          "url": "https://senjoo.ir/review-qcy-t13-anc2-case.html",
+          "manual_status": "not_yet_offered",
+          "index_status": "unknown",
+          "submitted_at": null,
+          "last_checked": null
+        }
+      ]
+    }
+  ]
+}
