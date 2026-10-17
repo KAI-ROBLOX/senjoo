@@ -14,7 +14,7 @@
     if(t==='guide')window.senjooTrack('guide_open',{content_type:'guide',item_id:href,link_text:text});
     else if(t==='comparison')window.senjooTrack('comparison_open',{content_type:'comparison',item_id:href,link_text:text});
     else if(t==='category')window.senjooTrack('category_open',{content_type:'category',item_id:href,link_text:text});
-    if(a.dataset&&a.dataset.affiliate==='true')window.senjooTrack('affiliate_click',{link_url:href,link_text:text,merchant:a.dataset.merchant||''});
+    if(a.dataset&&a.dataset.affiliate==='true')window.senjooTrack('affiliate_click',{link_url:href,link_text:text,merchant:a.dataset.merchant||'',placement:a.dataset.placement||'',product_id:a.dataset.product||''});
     try{var u=new URL(href,location.href);if(/^https?:$/i.test(u.protocol)&&u.hostname!==location.hostname)window.senjooTrack('outbound_click',{link_url:u.href,link_domain:u.hostname,link_text:text});}catch(err){}
   },true);
   document.addEventListener('submit',function(e){

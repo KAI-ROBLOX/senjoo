@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-17",
+  "policy": {
+    "price_storage": "none",
+    "offer_model": "one product can have one or more merchant offers",
+    "current_network": "Affilio",
+    "current_primary_merchant": "digikala",
+    "note": "Price and availability are checked on the merchant page; additional merchants can be appended without changing page architecture."
+  },
+  "products": [
+    {
+      "id": "anker-r50i-nc",
+      "page": "review-anker-r50i-nc.html",
+      "name": "بررسی Anker Soundcore R50i NC با حذف نویز فعال",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/15jroCUdk",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "anker-soundcore-r50i-a3949",
+      "page": "review-anker-soundcore-r50i-a3949.html",
+      "name": "بررسی Anker Soundcore R50i A3949 بدون ANC",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/Yj8tOW6o",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "hadron-a10-1",
+      "page": "review-hadron-a10-1.html",
+      "name": "بررسی مبدل برق هادرون A10-1",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/zuDcyZEN",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "hadron-p103",
+      "page": "review-hadron-p103.html",
+      "name": "بررسی محافظ برق هوشمند هادرون P103",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/Gfo0zPLT",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "pars-khazar-fh2000p",
+      "page": "review-pars-khazar-fh2000p.html",
+      "name": "بررسی فن هیتر پارس خزر FH2000P",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "نسخه تک‌عدد",
+          "url": "https://aflo.ir/17Y2qa4u4",
+          "status": "active",
+          "source": "affilio"
+        },
+        {
+          "merchant": "digikala",
+          "label": "بسته دوعددی",
+          "url": "https://aflo.ir/1HQFIZVUY",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "prime-c-prime-fusion-water-spf50",
+      "page": "review-prime-c-prime-fusion-water-spf50.html",
+      "name": "بررسی فلوئید ضدآفتاب Prime C-Prime Fusion Water SPF50",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/KGzWk9yf",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "qcy-t13-anc2-case",
+      "page": "review-qcy-t13-anc2-case.html",
+      "name": "راهنمای خرید کاور برای کیس QCY T13 ANC2",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "کاور سیلیکونی گزینه ۱",
+          "url": "https://aflo.ir/MBUHITAh",
+          "status": "active",
+          "source": "affilio"
+        },
+        {
+          "merchant": "digikala",
+          "label": "کاور سیلیکونی گزینه ۲",
+          "url": "https://aflo.ir/15FZIRt0R",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "qcy-t13-anc2",
+      "page": "review-qcy-t13-anc2.html",
+      "name": "بررسی QCY T13 ANC2؛ ANC، ENC و حالت Transparency",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/Tg56YgU5",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "racuten-prebiotic-moisturizer",
+      "page": "review-racuten-prebiotic-moisturizer.html",
+      "name": "بررسی کرم آبرسان Racuten Prebiotic حجم ۵۰ میلی‌لیتر",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/DyoNPzN",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "sam-ua32h6000mhchd",
+      "page": "review-sam-ua32h6000mhchd.html",
+      "name": "بررسی تلویزیون ۳۲ اینچ SAM UA32H6000MHCHD",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/aieDR1IJ",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "sam-ua50cu7750cc",
+      "page": "review-sam-ua50cu7750cc.html",
+      "name": "بررسی تلویزیون ۵۰ اینچ هوشمند SAM UA50CU7750CC",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/8nCyl0V8",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "samsung-galaxy-a07-64-4",
+      "page": "review-samsung-galaxy-a07-64-4.html",
+      "name": "بررسی Samsung Galaxy A07 با حافظه ۶۴ و رم ۴ گیگابایت",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "نسخه گوشی",
+          "url": "https://aflo.ir/fVh6BKng",
+          "status": "active",
+          "source": "affilio"
+        },
+        {
+          "merchant": "digikala",
+          "label": "نسخه همراه شارژر ۲۵ وات",
+          "url": "https://aflo.ir/DrR4sH6T",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "samsung-galaxy-a17-4g-128-4",
+      "page": "review-samsung-galaxy-a17-4g-128-4.html",
+      "name": "بررسی Samsung Galaxy A17 4G با حافظه ۱۲۸ و رم ۴ گیگابایت",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "نسخه گوشی",
+          "url": "https://aflo.ir/9thw9tTq",
+          "status": "active",
+          "source": "affilio"
+        },
+        {
+          "merchant": "digikala",
+          "label": "نسخه همراه شارژر ۲۵ وات",
+          "url": "https://aflo.ir/4y1CIrz5",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "samsung-galaxy-a37-256-8",
+      "page": "review-samsung-galaxy-a37-256-8.html",
+      "name": "بررسی Samsung Galaxy A37 با حافظه ۲۵۶ و رم ۸ گیگابایت",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "نسخه گوشی",
+          "url": "https://aflo.ir/CdTJKuIU",
+          "status": "active",
+          "source": "affilio"
+        },
+        {
+          "merchant": "digikala",
+          "label": "نسخه همراه شارژر ۲۵ وات",
+          "url": "https://aflo.ir/q2sU8028",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "vitalayer-activit-face-wash",
+      "page": "review-vitalayer-activit-face-wash.html",
+      "name": "بررسی فوم شست‌وشوی ویتالیر Activit برای پوست چرب و مختلط",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/EOrhrqFb",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "vitalayer-hydravit-spray",
+      "page": "review-vitalayer-hydravit-spray.html",
+      "name": "بررسی اسپری آبرسان Vitalayer Hydravit حجم ۷۵ میلی‌لیتر",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/RKjqSpaJ",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    },
+    {
+      "id": "xiaomi-redmi-powerbank-20000-18w",
+      "page": "review-xiaomi-redmi-powerbank-20000-18w.html",
+      "name": "بررسی پاوربانک Xiaomi Redmi 20000mAh 18W",
+      "offers": [
+        {
+          "merchant": "digikala",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/Nb3dJ65A",
+          "status": "active",
+          "source": "affilio"
+        }
+      ]
+    }
+  ]
+}
