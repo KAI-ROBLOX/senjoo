@@ -164,6 +164,38 @@
       "status": "backlog",
       "priority": 120,
       "draft": ".editorial/drafts/guide-hair-clipper-vs-trimmer.html"
+    },
+    {
+      "slug": "compare-anker-r50i-nc-vs-qcy-t13-anc2.html",
+      "title": "Anker R50i NC یا QCY T13 ANC2؟ مقایسه برای خرید",
+      "h1": "Anker R50i NC یا QCY T13 ANC2؟ مقایسه برای خرید",
+      "meta_description": "مقایسه Anker Soundcore R50i NC و QCY T13 ANC2 برای رفت‌وآمد، تماس، حذف نویز، باتری، اپلیکیشن و ارزش خرید؛ بدون اتکا به قیمت لحظه‌ای.",
+      "category": "تکنولوژی",
+      "category_page": "technology.html",
+      "image": "assets/technology.jpg",
+      "card_label": "Anker R50i NC یا QCY T13 ANC2",
+      "status": "queued",
+      "priority": 130,
+      "draft": ".editorial/drafts/compare-anker-r50i-nc-vs-qcy-t13-anc2.html",
+      "refill_source": "verified-affilio+digikala-7d-30d+site-gap",
+      "created_at": "2026-10-17"
+    },
+    {
+      "slug": "compare-samsung-galaxy-a17-vs-a07.html",
+      "title": "Samsung Galaxy A17 4G یا A07؟ مقایسه برای خرید",
+      "h1": "Samsung Galaxy A17 4G یا A07؟ مقایسه برای خرید",
+      "meta_description": "مقایسه Samsung Galaxy A17 4G و Galaxy A07 برای کاربر ایرانی؛ نمایشگر، دوربین، حافظه، استفاده روزمره و ارزش خرید بدون درج قیمت لحظه‌ای.",
+      "category": "تکنولوژی",
+      "category_page": "technology.html",
+      "image": "assets/technology.jpg",
+      "card_label": "Galaxy A17 4G یا A07",
+      "status": "backlog",
+      "priority": 140,
+      "draft": ".editorial/drafts/compare-samsung-galaxy-a17-vs-a07.html",
+      "refill_source": "verified-affilio+digikala-7d-30d+site-gap",
+      "created_at": "2026-10-17"
     }
-  ]
+  ],
+  "backlog_floor": 4,
+  "refill_when_at_or_below_floor": true
 }
