@@ -2,8 +2,12 @@
   "publisher": "github-actions-static-html",
   "schedule": "30 5 * * 2,4,6 UTC",
   "queue_floor": 6,
-  "queued": 6,
-  "backlog": 4,
+  "backlog_floor": 4,
+  "queued": 7,
+  "backlog": 5,
   "published": 2,
+  "refill_needed": false,
+  "next_slug": "guide-home-wifi-router.html",
+  "next_title": "راهنمای خرید مودم و روتر وای‌فای برای خانه",
   "last_publish": "https://senjoo.ir/compare-stick-vacuum-vs-canister.html"
 }
