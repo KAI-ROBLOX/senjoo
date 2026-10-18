@@ -21,7 +21,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/anker-r50i-nc.jpg"
     },
     {
       "id": "anker-soundcore-r50i-a3949",
@@ -35,7 +36,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/anker-soundcore-r50i-a3949.jpg"
     },
     {
       "id": "hadron-a10-1",
@@ -49,7 +51,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/hadron-a10-1.jpg"
     },
     {
       "id": "hadron-p103",
@@ -63,7 +66,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/hadron-p103.jpg"
     },
     {
       "id": "pars-khazar-fh2000p",
@@ -84,7 +88,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/pars-khazar-fh2000p.jpg"
     },
     {
       "id": "prime-c-prime-fusion-water-spf50",
@@ -98,7 +103,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/prime-c-prime-fusion-water-spf50.jpg"
     },
     {
       "id": "qcy-t13-anc2-case",
@@ -133,7 +139,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/qcy-t13-anc2.jpg"
     },
     {
       "id": "racuten-prebiotic-moisturizer",
@@ -147,7 +154,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/racuten-prebiotic-moisturizer.jpg"
     },
     {
       "id": "sam-ua32h6000mhchd",
@@ -161,7 +169,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/sam-ua32h6000mhchd.jpg"
     },
     {
       "id": "sam-ua50cu7750cc",
@@ -175,7 +184,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/sam-ua50cu7750cc.jpg"
     },
     {
       "id": "samsung-galaxy-a07-64-4",
@@ -196,7 +206,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/samsung-galaxy-a07-64-4.jpg"
     },
     {
       "id": "samsung-galaxy-a17-4g-128-4",
@@ -217,7 +228,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/samsung-galaxy-a17-4g-128-4.jpg"
     },
     {
       "id": "samsung-galaxy-a37-256-8",
@@ -238,7 +250,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/samsung-galaxy-a37-256-8.jpg"
     },
     {
       "id": "vitalayer-activit-face-wash",
@@ -252,7 +265,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/vitalayer-activit-face-wash.jpg"
     },
     {
       "id": "vitalayer-hydravit-spray",
@@ -266,7 +280,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/vitalayer-hydravit-spray.jpg"
     },
     {
       "id": "xiaomi-redmi-powerbank-20000-18w",
@@ -280,7 +295,8 @@
           "status": "active",
           "source": "affilio"
         }
-      ]
+      ],
+      "image": "assets/products/xiaomi-redmi-powerbank-20000-18w.jpg"
     }
   ]
 }

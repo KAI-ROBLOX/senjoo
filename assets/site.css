@@ -25,3 +25,10 @@ footer{background:#102b38;color:#d9e4e7;padding:40px 0 26px}.foot{display:grid;g
 .heroCommerceLink{display:inline-flex;margin:12px 0 2px;color:var(--brand);font-size:13px;font-weight:950}
 @media(max-width:900px){.quickPickGrid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.commerceTop{padding:17px;margin:14px 0 18px}.commerceActions{display:grid}.commerceActions .btn{width:100%}.midBuy{align-items:stretch;flex-direction:column}.midBuy .btn{width:100%}.quickPickHead{display:block}.quickPickHead p{margin-top:5px!important}.quickPickGrid{grid-template-columns:1fr}.quickPick p{min-height:0}.commercePage{padding-bottom:78px}.mobileBuyBar{position:fixed;display:flex;z-index:40;right:10px;left:10px;bottom:10px;align-items:center;justify-content:space-between;gap:10px;padding:10px 11px 10px 14px;background:rgba(15,35,49,.96);border:1px solid rgba(255,255,255,.15);border-radius:16px;box-shadow:0 14px 35px rgba(0,0,0,.25);backdrop-filter:blur(12px)}.mobileBuyBar span{color:#fff;font-size:12px;font-weight:850}.mobileBuyBar .btn{padding:10px 14px;white-space:nowrap}}
+
+/* SENJOO exact product imagery */
+.articleHero.productHero{object-fit:contain;background:#fff;padding:14px;box-sizing:border-box;border:1px solid var(--line)}
+.card img.productImg{object-fit:contain;background:#fff;padding:12px;box-sizing:border-box}
+.quickPick .pickProductImg{width:100%;height:150px;object-fit:contain;display:block;background:#fff;border-radius:12px;margin:0 0 10px}
+.commerceProductImg{display:block;width:min(190px,55%);height:170px;object-fit:contain;background:#fff;border-radius:14px;margin:12px auto}
+@media(max-width:620px){.articleHero.productHero{height:280px}.quickPick .pickProductImg{height:135px}.commerceProductImg{height:145px}}
