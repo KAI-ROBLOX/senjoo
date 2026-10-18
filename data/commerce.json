@@ -327,7 +327,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/thermal-grizzly-duronaut-2g.webp"
     },
     {
       "id": "thermal-grizzly-duronaut-6g",
@@ -342,7 +342,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/thermal-grizzly-duronaut-6g.webp"
     },
     {
       "id": "orange-outdoor-bdz-430-e-a",
@@ -357,7 +357,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/orange-outdoor-bdz-430-e-a.webp"
     },
     {
       "id": "eternocell-aha-bha-face-wash-200ml",
@@ -417,7 +417,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/instant-print-camera-unicorn.webp"
     },
     {
       "id": "instant-print-camera-en71",
@@ -447,7 +447,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/biodance-collagen-mask-34g.webp"
     },
     {
       "id": "my-hyaluronic-acid-sunscreen-50ml",
@@ -462,7 +462,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/my-hyaluronic-acid-sunscreen-50ml.webp"
     },
     {
       "id": "calista-extend-volume-4in1-11ml",
@@ -477,7 +477,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/calista-extend-volume-4in1-11ml.webp"
     }
   ]
 }
