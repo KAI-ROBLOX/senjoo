@@ -6,7 +6,11 @@
     "offer_model": "one product can have one or more merchant offers",
     "current_network": "Affilio",
     "current_primary_merchant": "digikala",
-    "note": "Price and availability are checked on the merchant page; additional merchants can be appended without changing page architecture."
+    "note": "Price and availability are checked on the merchant page; additional merchants can be appended without changing page architecture.",
+    "current_merchants": [
+      "digikala",
+      "snappshop"
+    ]
   },
   "products": [
     {
@@ -122,6 +126,13 @@
           "merchant": "digikala",
           "label": "کاور سیلیکونی گزینه ۲",
           "url": "https://aflo.ir/15FZIRt0R",
+          "status": "active",
+          "source": "affilio"
+        },
+        {
+          "merchant": "snappshop",
+          "label": "کاور QCY T13 ANC2",
+          "url": "https://aflo.ir/GvG3WNMn",
           "status": "active",
           "source": "affilio"
         }
