@@ -313,6 +313,171 @@
         }
       ],
       "image": "assets/products/xiaomi-redmi-powerbank-20000-18w.jpg"
+    },
+    {
+      "id": "thermal-grizzly-duronaut-2g",
+      "page": "compare-thermal-grizzly-duronaut-2g-vs-6g.html",
+      "name": "Thermal Grizzly Duronaut 2g",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/19ZF9qy3h",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "thermal-grizzly-duronaut-6g",
+      "page": "compare-thermal-grizzly-duronaut-2g-vs-6g.html",
+      "name": "Thermal Grizzly Duronaut 6g",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/si9QRRQA",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "orange-outdoor-bdz-430-e-a",
+      "page": "review-orange-outdoor-bdz-430-e-a.html",
+      "name": "Orange Outdoor BDZ-430-E-A",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/KyxgDsR0",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "eternocell-aha-bha-face-wash-200ml",
+      "page": "review-eternocell-aha-bha-face-wash-200ml.html",
+      "name": "EternoCell AHA & BHA Face Wash 200ml",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/7NAp1B31",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "nova-5135",
+      "page": "review-nova-5135-car-washer.html",
+      "name": "Nova 5135",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/1CHzWJ9vn",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "filiplast-curtain-020-210x240",
+      "page": "review-filiplast-magnetic-curtain-020-210x240.html",
+      "name": "Fili Plast 020 210×240",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/k1K9wI3f",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "instant-print-camera-unicorn",
+      "page": "compare-instant-print-camera-unicorn-vs-en71.html",
+      "name": "Instant Print Camera Unicorn",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/FPMrD2ds",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "instant-print-camera-en71",
+      "page": "compare-instant-print-camera-unicorn-vs-en71.html",
+      "name": "Instant Print Camera EN71",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/u1xjPIKm",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "biodance-collagen-mask-34g",
+      "page": "review-biodance-collagen-mask-34g.html",
+      "name": "Biodance Collagen Mask 34g",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/C6mihcs5",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "my-hyaluronic-acid-sunscreen-50ml",
+      "page": "review-my-hyaluronic-acid-sunscreen-50ml.html",
+      "name": "MY Hyaluronic Acid Sunscreen Fluid 50ml",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/1wlTt2Om",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
+    },
+    {
+      "id": "calista-extend-volume-4in1-11ml",
+      "page": "review-calista-extend-volume-4in1-11ml.html",
+      "name": "Calista Extend Volume 4in1 11ml",
+      "offers": [
+        {
+          "merchant": "snappshop",
+          "label": "مشاهده قیمت و موجودی",
+          "url": "https://aflo.ir/16o1OWLIF",
+          "status": "active",
+          "source": "affilio"
+        }
+      ],
+      "image_status": "pending_exact_photo"
     }
   ]
 }
