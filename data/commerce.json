@@ -372,7 +372,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/eternocell-aha-bha-face-wash-200ml.webp"
     },
     {
       "id": "nova-5135",
@@ -387,7 +387,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/nova-5135.webp"
     },
     {
       "id": "filiplast-curtain-020-210x240",
@@ -402,7 +402,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/filiplast-curtain-020-210x240.webp"
     },
     {
       "id": "instant-print-camera-unicorn",
@@ -432,7 +432,7 @@
           "source": "affilio"
         }
       ],
-      "image_status": "pending_exact_photo"
+      "image": "assets/products/instant-print-camera-en71.webp"
     },
     {
       "id": "biodance-collagen-mask-34g",
