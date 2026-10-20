@@ -4,10 +4,10 @@
   "queue_floor": 6,
   "backlog_floor": 4,
   "queued": 7,
-  "backlog": 5,
-  "published": 2,
-  "refill_needed": false,
-  "next_slug": "guide-home-wifi-router.html",
-  "next_title": "راهنمای خرید مودم و روتر وای‌فای برای خانه",
-  "last_publish": "https://senjoo.ir/compare-stick-vacuum-vs-canister.html"
+  "backlog": 4,
+  "published": 3,
+  "refill_needed": true,
+  "next_slug": "guide-bluetooth-speaker.html",
+  "next_title": "راهنمای خرید اسپیکر بلوتوث قابل حمل",
+  "last_publish": "https://senjoo.ir/guide-home-wifi-router.html"
 }

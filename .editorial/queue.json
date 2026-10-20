@@ -3,7 +3,7 @@
   "schedule": "30 5 * * 2,4,6 UTC",
   "cadence": "Tuesday / Thursday / Saturday",
   "queue_floor": 6,
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-20",
   "items": [
     {
       "slug": "guide-air-fryer-buying.html",
@@ -42,9 +42,10 @@
       "category_page": "technology.html",
       "image": "assets/technology.jpg",
       "card_label": "مودم و روتر وای‌فای",
-      "status": "queued",
+      "status": "published",
       "priority": 30,
-      "draft": ".editorial/drafts/guide-home-wifi-router.html"
+      "draft": ".editorial/drafts/guide-home-wifi-router.html",
+      "published_at": "2026-10-20"
     },
     {
       "slug": "guide-bluetooth-speaker.html",
@@ -122,9 +123,10 @@
       "category_page": "home.html",
       "image": "assets/home.jpg",
       "card_label": "سرخ‌کن تک‌سبد یا دوقلو",
-      "status": "backlog",
+      "status": "queued",
       "priority": 90,
-      "draft": ".editorial/drafts/compare-air-fryer-single-vs-dual-basket.html"
+      "draft": ".editorial/drafts/compare-air-fryer-single-vs-dual-basket.html",
+      "promoted_at": "2026-10-20"
     },
     {
       "slug": "compare-robot-vacuum-vs-stick-vacuum.html",
