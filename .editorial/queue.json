@@ -3,7 +3,7 @@
   "schedule": "30 5 * * 2,4,6 UTC",
   "cadence": "Tuesday / Thursday / Saturday",
   "queue_floor": 6,
-  "updated_at": "2026-10-20",
+  "updated_at": "2026-10-22",
   "items": [
     {
       "slug": "guide-air-fryer-buying.html",
@@ -56,9 +56,10 @@
       "category_page": "technology.html",
       "image": "assets/technology.jpg",
       "card_label": "اسپیکر بلوتوث",
-      "status": "queued",
+      "status": "published",
       "priority": 40,
-      "draft": ".editorial/drafts/guide-bluetooth-speaker.html"
+      "draft": ".editorial/drafts/guide-bluetooth-speaker.html",
+      "published_at": "2026-10-22"
     },
     {
       "slug": "guide-body-shaver.html",
@@ -137,9 +138,10 @@
       "category_page": "home.html",
       "image": "assets/guide-robot.jpg",
       "card_label": "جارو رباتیک یا جارو شارژی",
-      "status": "backlog",
+      "status": "queued",
       "priority": 100,
-      "draft": ".editorial/drafts/compare-robot-vacuum-vs-stick-vacuum.html"
+      "draft": ".editorial/drafts/compare-robot-vacuum-vs-stick-vacuum.html",
+      "promoted_at": "2026-10-22"
     },
     {
       "slug": "guide-modem-4g-5g-tdlte.html",
