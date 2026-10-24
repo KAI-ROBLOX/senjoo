@@ -3,7 +3,7 @@
   "schedule": "30 5 * * 2,4,6 UTC",
   "cadence": "Tuesday / Thursday / Saturday",
   "queue_floor": 6,
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-24",
   "items": [
     {
       "slug": "guide-air-fryer-buying.html",
@@ -70,9 +70,10 @@
       "category_page": "beauty.html",
       "image": "assets/beauty.jpg",
       "card_label": "ماشین اصلاح مردانه",
-      "status": "queued",
+      "status": "published",
       "priority": 50,
-      "draft": ".editorial/drafts/guide-body-shaver.html"
+      "draft": ".editorial/drafts/guide-body-shaver.html",
+      "published_at": "2026-10-24"
     },
     {
       "slug": "guide-hair-straightener-plates.html",
@@ -152,9 +153,10 @@
       "category_page": "technology.html",
       "image": "assets/technology.jpg",
       "card_label": "مودم 4G/5G یا TD-LTE",
-      "status": "backlog",
+      "status": "queued",
       "priority": 110,
-      "draft": ".editorial/drafts/guide-modem-4g-5g-tdlte.html"
+      "draft": ".editorial/drafts/guide-modem-4g-5g-tdlte.html",
+      "promoted_at": "2026-10-24"
     },
     {
       "slug": "guide-hair-clipper-vs-trimmer.html",
