@@ -3,7 +3,7 @@
   "schedule": "30 5 * * 2,4,6 UTC",
   "cadence": "Tuesday / Thursday / Saturday",
   "queue_floor": 6,
-  "updated_at": "2026-10-24",
+  "updated_at": "2026-10-26",
   "items": [
     {
       "slug": "guide-air-fryer-buying.html",
@@ -200,6 +200,51 @@
       "draft": ".editorial/drafts/compare-samsung-galaxy-a17-vs-a07.html",
       "refill_source": "verified-affilio+digikala-7d-30d+site-gap",
       "created_at": "2026-10-17"
+    },
+    {
+      "slug": "guide-electric-toothbrush-types.html",
+      "title": "مسواک برقی سونیک یا چرخشی؟ راهنمای انتخاب بدون گیر افتادن در برند",
+      "h1": "مسواک برقی سونیک یا چرخشی؟ راهنمای انتخاب بدون گیر افتادن در برند",
+      "meta_description": "راهنمای انتخاب مسواک برقی سونیک یا چرخشی بر اساس نوع حرکت، سری یدک، تایمر، فشار، باتری، نگهداری و هزینه مصرفی؛ بدون اتکا به قیمت لحظه‌ای.",
+      "category": "زیبایی و مراقبت شخصی",
+      "category_page": "beauty.html",
+      "image": "assets/beauty.jpg",
+      "card_label": "مسواک برقی سونیک یا چرخشی",
+      "status": "backlog",
+      "priority": 150,
+      "draft": ".editorial/drafts/guide-electric-toothbrush-types.html",
+      "refill_source": "current-iran-market-gap-2026-10-26",
+      "created_at": "2026-10-26"
+    },
+    {
+      "slug": "compare-external-ssd-vs-hdd.html",
+      "title": "SSD اکسترنال یا هارد اکسترنال HDD؟ مقایسه برای بکاپ، جابه‌جایی و کار روزمره",
+      "h1": "SSD اکسترنال یا هارد اکسترنال HDD؟ مقایسه برای بکاپ، جابه‌جایی و کار روزمره",
+      "meta_description": "مقایسه SSD اکسترنال و HDD اکسترنال بر اساس سرعت، ظرفیت، دوام در حمل، رابط، بکاپ، هزینه به ازای ظرفیت و نوع استفاده؛ بدون تکیه به قیمت لحظه‌ای.",
+      "category": "تکنولوژی",
+      "category_page": "technology.html",
+      "image": "assets/technology.jpg",
+      "card_label": "SSD اکسترنال یا HDD",
+      "status": "backlog",
+      "priority": 160,
+      "draft": ".editorial/drafts/compare-external-ssd-vs-hdd.html",
+      "refill_source": "current-iran-market-gap-2026-10-26",
+      "created_at": "2026-10-26"
+    },
+    {
+      "slug": "guide-air-purifier-room-size.html",
+      "title": "راهنمای خرید دستگاه تصفیه هوا: متراژ، CADR، فیلتر و هزینه نگهداری",
+      "h1": "راهنمای خرید دستگاه تصفیه هوا: متراژ، CADR، فیلتر و هزینه نگهداری",
+      "meta_description": "راهنمای انتخاب تصفیه هوا بر اساس متراژ، CADR، نوع فیلتر، صدای شب، سنسور، فیلتر جایگزین و هزینه نگهداری؛ بدون ادعای درمانی و بدون قیمت لحظه‌ای.",
+      "category": "خانه و زندگی",
+      "category_page": "home.html",
+      "image": "assets/home.jpg",
+      "card_label": "تصفیه هوا بر اساس متراژ",
+      "status": "backlog",
+      "priority": 170,
+      "draft": ".editorial/drafts/guide-air-purifier-room-size.html",
+      "refill_source": "current-iran-market-gap-2026-10-26",
+      "created_at": "2026-10-26"
     }
   ],
   "backlog_floor": 4,
