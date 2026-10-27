@@ -3,7 +3,7 @@
   "schedule": "30 5 * * 2,4,6 UTC",
   "cadence": "Tuesday / Thursday / Saturday",
   "queue_floor": 6,
-  "updated_at": "2026-10-26",
+  "updated_at": "2026-10-27",
   "items": [
     {
       "slug": "guide-air-fryer-buying.html",
@@ -84,9 +84,10 @@
       "category_page": "beauty.html",
       "image": "assets/guide-hair.jpg",
       "card_label": "اتو مو سرامیکی یا تیتانیومی",
-      "status": "queued",
+      "status": "published",
       "priority": 60,
-      "draft": ".editorial/drafts/guide-hair-straightener-plates.html"
+      "draft": ".editorial/drafts/guide-hair-straightener-plates.html",
+      "published_at": "2026-10-27"
     },
     {
       "slug": "compare-smartwatch-vs-fitness-band.html",
@@ -167,9 +168,10 @@
       "category_page": "beauty.html",
       "image": "assets/beauty.jpg",
       "card_label": "خط‌زن، تریمر یا کلیپر",
-      "status": "backlog",
+      "status": "queued",
       "priority": 120,
-      "draft": ".editorial/drafts/guide-hair-clipper-vs-trimmer.html"
+      "draft": ".editorial/drafts/guide-hair-clipper-vs-trimmer.html",
+      "promoted_at": "2026-10-27"
     },
     {
       "slug": "compare-anker-r50i-nc-vs-qcy-t13-anc2.html",

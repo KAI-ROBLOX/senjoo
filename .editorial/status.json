@@ -4,10 +4,10 @@
   "queue_floor": 6,
   "backlog_floor": 4,
   "queued": 7,
-  "backlog": 5,
-  "published": 5,
-  "refill_needed": false,
-  "next_slug": "guide-hair-straightener-plates.html",
-  "next_title": "اتو مو سرامیکی یا تیتانیومی؟ راهنمای انتخاب بر اساس نوع مو",
-  "last_publish": "https://senjoo.ir/guide-body-shaver.html"
+  "backlog": 4,
+  "published": 6,
+  "refill_needed": true,
+  "next_slug": "compare-smartwatch-vs-fitness-band.html",
+  "next_title": "ساعت هوشمند یا مچ‌بند هوشمند؟ تفاوت‌ها برای استفاده روزمره",
+  "last_publish": "https://senjoo.ir/guide-hair-straightener-plates.html"
 }
