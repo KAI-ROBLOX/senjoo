@@ -1,5 +1,6 @@
 from pathlib import Path
 import json,re,html,datetime,sys
+from urllib.parse import quote
 ROOT=Path(__file__).resolve().parents[2]
 Q=ROOT/".editorial/queue.json"; STATUS=ROOT/".editorial/status.json"; LAST=ROOT/".editorial/last_publish.json"; GUIDES=ROOT/"guides.html"; COMPARISONS=ROOT/"comparisons.html"; ARTICLES=ROOT/"articles.html"; SITEMAP=ROOT/"sitemap.xml"; HOME=ROOT/"index.html"
 GUIDE_MARK="<!-- EDITORIAL_GUIDES_INSERT -->"; COMPARE_MARK="<!-- EDITORIAL_COMPARISONS_INSERT -->"; ARTICLE_MARK="<!-- EDITORIAL_ARTICLES_INSERT -->"; CAT_MARK="<!-- EDITORIAL_CATEGORY_INSERT -->"; HOME_START="<!-- EDITORIAL_HOME_LATEST_START -->"; HOME_END="<!-- EDITORIAL_HOME_LATEST_END -->"
@@ -45,6 +46,31 @@ def validate_draft(item,text):
     for needle,label in checks:
         if needle not in text: raise SystemExit(f"{label} missing")
     if text.count('href="')<5: raise SystemExit("Internal links too thin")
+def sanitize_internal_links(item,text):
+    def repl(m):
+        href=m.group(1)
+        if href.startswith(("http://","https://","mailto:","tel:","#","/")):
+            return m.group(0)
+        clean=href.split("#",1)[0].split("?",1)[0]
+        if clean.endswith(".html") and clean!=item["slug"] and not (ROOT/clean).exists():
+            return f'href="{html.escape(item["category_page"])}"'
+        return m.group(0)
+    return re.sub(r'href="([^"]+)"',repl,text)
+
+def ensure_buy_cta(item,text):
+    if 'data-affiliate="true"' in text or 'data-senjoo-buy-cta=' in text:
+        return text
+    query=item.get("buy_query") or item.get("card_label") or item["h1"]
+    url="https://www.digikala.com/search/?q="+quote(query)
+    block=(f'<div class="panel senjooBuyCta" data-senjoo-buy-cta="category-search" style="margin-top:28px">'
+           f'<span class="kicker">مسیر خرید</span><h2 style="margin-top:4px">قیمت و مدل‌های موجود را ببین</h2>'
+           f'<p>بعد از مشخص‌کردن معیارها، مدل‌های مرتبط را در فروشگاه ببین و قیمت، موجودی، فروشنده و مشخصات نهایی را همان‌جا دوباره بررسی کن.</p>'
+           f'<div class="commerceActions"><a class="btn" href="{url}" target="_blank" rel="nofollow noopener" data-merchant="digikala" data-placement="editorial_buy">مشاهده محصولات مرتبط در دیجی‌کالا</a>'
+           f'<a class="ghost" href="{html.escape(item["category_page"])}">ادامه راهنماهای سنجو</a></div>'
+           f'<p class="commerceMicro">این دکمه جست‌وجوی مرتبط را باز می‌کند؛ قیمت و موجودی ممکن است تغییر کند.</p></div>')
+    anchor='<div class="panel" style="margin-top:28px"><h3>مطالب مرتبط</h3>'
+    return text.replace(anchor,block+anchor,1) if anchor in text else text.replace('</article>',block+'</article>',1)
+
 def scan_duplicates(item):
     for p in ROOT.glob("*.html"):
         if p.name==item["slug"]:continue
@@ -59,7 +85,11 @@ text=read(draft);validate_draft(item,text);scan_duplicates(item)
 today=datetime.datetime.now(datetime.timezone.utc).date().isoformat()
 text=text.replace("__PUBLISH_DATE__",today)
 text=text.replace('<a href="comparisons.html">مقایسه</a><a href="about.html">','<a href="comparisons.html">مقایسه</a><a href="articles.html">مقالات</a><a href="about.html">')
-text=text.replace('<a href="comparisons.html">مقایسه‌ها</a>','<a href="comparisons.html">مقایسه‌ها</a><a href="articles.html">مقالات</a>')
+if '<a href="articles.html">مقالات</a>' not in text:
+    text=text.replace('<a href="comparisons.html">مقایسه‌ها</a>','<a href="comparisons.html">مقایسه‌ها</a><a href="articles.html">مقالات</a>')
+text=sanitize_internal_links(item,text)
+text=ensure_buy_cta(item,text)
+if 'data-senjoo-buy-cta=' not in text and 'data-affiliate="true"' not in text: raise SystemExit("Buy CTA missing")
 dest=ROOT/item["slug"]
 if dest.exists():raise SystemExit(f"Destination already exists: {dest}")
 write(dest,text)

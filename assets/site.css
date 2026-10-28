@@ -38,3 +38,10 @@ footer{background:#102b38;color:#d9e4e7;padding:40px 0 26px}.foot{display:grid;g
 .productHeroPending b{font-size:18px}.productHeroPending span{font-size:12px;color:var(--muted);margin-top:6px}
 .productThumbPending{height:170px;background:linear-gradient(135deg,#f3f8f7,#fafafa);border-bottom:1px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:12px;font-weight:850}
 .quickPick .productThumbPending{height:110px;border:1px dashed var(--line);border-radius:12px;margin-bottom:10px}
+
+/* KAI 2026-10-28: editorial purchase path */
+.senjooBuyCta{background:linear-gradient(135deg,#f3fffc,#fff8eb);border-color:#b9e3dc!important}
+.senjooBuyCta .commerceActions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.senjooBuyCta .btn{box-shadow:0 10px 24px rgba(11,128,121,.18)}
+.senjooBuyCta .ghost{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:12px;font-weight:900}
+@media(max-width:680px){.senjooBuyCta .commerceActions{display:grid}.senjooBuyCta .btn,.senjooBuyCta .ghost{width:100%;justify-content:center}}
