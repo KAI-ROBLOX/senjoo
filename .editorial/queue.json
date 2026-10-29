@@ -3,7 +3,7 @@
   "schedule": "30 5 * * 2,4,6 UTC",
   "cadence": "Tuesday / Thursday / Saturday",
   "queue_floor": 6,
-  "updated_at": "2026-10-27",
+  "updated_at": "2026-10-29",
   "items": [
     {
       "slug": "guide-air-fryer-buying.html",
@@ -98,10 +98,11 @@
       "category_page": "technology.html",
       "image": "assets/technology.jpg",
       "card_label": "ساعت هوشمند یا مچ‌بند",
-      "status": "queued",
+      "status": "published",
       "priority": 70,
       "draft": ".editorial/drafts/compare-smartwatch-vs-fitness-band.html",
-      "promoted_at": "2026-10-16"
+      "promoted_at": "2026-10-16",
+      "published_at": "2026-10-29"
     },
     {
       "slug": "compare-earbuds-vs-over-ear.html",
@@ -197,11 +198,12 @@
       "category_page": "technology.html",
       "image": "assets/technology.jpg",
       "card_label": "Galaxy A17 4G یا A07",
-      "status": "backlog",
+      "status": "queued",
       "priority": 140,
       "draft": ".editorial/drafts/compare-samsung-galaxy-a17-vs-a07.html",
       "refill_source": "verified-affilio+digikala-7d-30d+site-gap",
-      "created_at": "2026-10-17"
+      "created_at": "2026-10-17",
+      "promoted_at": "2026-10-29"
     },
     {
       "slug": "guide-electric-toothbrush-types.html",
