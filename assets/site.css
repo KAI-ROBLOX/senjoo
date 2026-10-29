@@ -45,3 +45,26 @@ footer{background:#102b38;color:#d9e4e7;padding:40px 0 26px}.foot{display:grid;g
 .senjooBuyCta .btn{box-shadow:0 10px 24px rgba(11,128,121,.18)}
 .senjooBuyCta .ghost{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:12px;font-weight:900}
 @media(max-width:680px){.senjooBuyCta .commerceActions{display:grid}.senjooBuyCta .btn,.senjooBuyCta .ghost{width:100%;justify-content:center}}
+
+/* Keep editorial hub images visually contained inside their cards. */
+.hubGrid .card{overflow:hidden}
+.hubGrid .card>img{
+  width:calc(100% - 28px);
+  max-width:calc(100% - 28px);
+  height:220px;
+  margin:14px 14px 0;
+  border-radius:18px;
+  object-fit:cover;
+  display:block;
+  box-sizing:border-box;
+}
+.hubGrid .card>img.productImg{object-fit:contain;background:#fff}
+@media(max-width:620px){
+  .hubGrid .card>img{
+    width:calc(100% - 20px);
+    max-width:calc(100% - 20px);
+    height:210px;
+    margin:10px 10px 0;
+    border-radius:15px;
+  }
+}
